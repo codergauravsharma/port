@@ -11,7 +11,6 @@ module.exports = {
 				},
 			},
 			ignorableDeepImportMatchers: [
-				/zone.js\//,
 				/tns-core-modules\//,
 				/@nativescript\/core\//,
 			],

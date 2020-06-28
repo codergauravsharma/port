@@ -1,7 +1,7 @@
 {
-	"name": "port",
+	"name": "nsapp",
 	"nativescript": {
-		"id": "org.nativescript.port",
+		"id": "org.nativescript.nsapp",
 		"tns-ios": {
 			"version": "6.5.1"
 		}
@@ -15,8 +15,10 @@
 		"lint": "ng lint",
 		"e2e": "ng e2e",
 		"clean": "npx rimraf hooks node_modules platforms package-lock.json && npm i",
-		"android": "tns debug android --env.aot --no-hmr",
-		"ios": "tns debug ios --env.aot --no-hmr --device 219F1816-5F0F-448D-BB96-BB7B03B480DD",
+		"android": "tns run android --env.aot",
+		"android-debug": "tns debug android --env.aot --no-hmr",
+		"ios": "tns run ios --env.aot --device 219F1816-5F0F-448D-BB96-BB7B03B480DD",
+		"ios-debug": "tns debug ios --env.aot --no-hmr --device 219F1816-5F0F-448D-BB96-BB7B03B480DD",
 		"mobile": "tns run",
 		"preview": "tns preview",
 		"ngcc": "ngcc --properties es2015 module main --first-only",
@@ -27,20 +29,19 @@
 		"@angular/animations": "~9.1.0",
 		"@angular/common": "~9.1.0",
 		"@angular/compiler": "~9.1.0",
-		"@angular/compiler-cli": "~9.1.0",
 		"@angular/core": "~9.1.0",
 		"@angular/forms": "~9.1.0",
 		"@angular/platform-browser": "~9.1.0",
 		"@angular/platform-browser-dynamic": "~9.1.0",
 		"@angular/router": "~9.1.0",
 		"core-js": "^2.6.9",
-		"@nativescript/angular": "^9.0.0",
-		"@nativescript/core": "~6.5.0",
+		"@nativescript/angular": "~9.0.0",
+		"@nativescript/core": "~6.5.5",
 		"@nativescript/theme": "~2.2.1",
 		"reflect-metadata": "~0.1.12",
 		"rxjs": "~6.5.5",
 		"tslib": "1.10.0",
-		"zone.js": "~0.10.3"
+		"zone.js": "~0.10.2"
 	},
 	"devDependencies": {
 		"@angular/cli": "~9.1.0",
@@ -48,7 +49,6 @@
 		"@angular-devkit/build-angular": "~0.901.0",
 		"@nativescript/schematics": "~9.0.0",
 		"@nativescript/tslint-rules": "~0.0.5",
-		"@ngtools/webpack": "~9.1.0",
 		"@types/jasmine": "~3.5.0",
 		"@types/jasminewd2": "~2.0.3",
 		"@types/node": "^12.11.1",
@@ -62,7 +62,6 @@
 		"karma-jasmine-html-reporter": "^1.4.2",
 		"nativescript-dev-webpack": "~1.5.0",
 		"protractor": "~5.4.3",
-		"terser-webpack-plugin": "~2.2.0",
 		"ts-node": "~8.3.0",
 		"tslint": "~6.1.0",
 		"typescript": "~3.8.3",
