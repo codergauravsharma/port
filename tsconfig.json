@@ -27,8 +27,5 @@
 	},
 	"includes": ["references.d.ts"],
 	"files": ["./src/main.ts"],
-	"exclude": ["node_modules", "platforms", "**/*.aot", "e2e"],
-	"angularCompilerOptions": {
-		"enableIvy": true
-	}
+	"exclude": ["node_modules", "platforms", "**/*.aot", "e2e"]
 }

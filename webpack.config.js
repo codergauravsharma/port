@@ -94,9 +94,10 @@ module.exports = env => {
     ngCompilerTransformers.push(nsReplaceBootstrap);
   }
 
+  const copyIgnore = { ignore: [`${relative(appPath, appResourcesFullPath)}/**`] };
   const copyTargets = [
-    { from: 'assets/**', globOptions: { dot: false } },
-    { from: 'fonts/**', globOptions: { dot: false } },
+    { from: 'assets/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
+    { from: 'fonts/**', noErrorOnMissing: true, globOptions: { dot: false, ...copyIgnore } },
   ];
 
   if (!production) {
@@ -358,9 +359,9 @@ module.exports = env => {
       }),
       // Remove all files from the out dir.
       new CleanWebpackPlugin(itemsToClean, { verbose: !!verbose }),
-      // Copy assets to out dir. Add your own globs as needed.
-      new CopyWebpackPlugin(copyTargets, {
-        ignore: [`${relative(appPath, appResourcesFullPath)}/**`]
+      // Copy assets
+      new CopyWebpackPlugin({
+          patterns: copyTargets,
       }),
       new nsWebpack.GenerateNativeScriptEntryPointsPlugin('bundle'),
       // For instructions on how to set up workers with webpack
