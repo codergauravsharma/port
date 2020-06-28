@@ -1,0 +1,132 @@
+StackLayout {
+	color: #333;
+}
+
+.page-container {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.page-container-portrait {
+	/*background-image: url('https://images.unsplash.com/photo-1509895846073-1c731f9f0950');*/
+	background-image: url("https://i.imgur.com/kTnfa7E.jpg");
+}
+
+.page-container-landscape {
+	background-image: url("https://i.imgur.com/bi4ZSqs.jpg");
+}
+
+.page-container-overlay {
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100%;
+	width: 100%;
+}
+
+.page-content-container {
+	margin: 20 5 0 5;
+	height: 100%;
+}
+
+.current-location-offerings-icon {
+	margin-top: 0;
+	width: 25;
+}
+
+.current-location-offerings-count {
+	margin: -5 0 0 5;
+	font-size: 20;
+}
+
+.current-location-placeholder {
+	margin: 0;
+	font-size: 22;
+	padding: 2 20;
+	background-color: rgba(240, 154, 26, 0.5);
+}
+
+.current-location-weather {
+	margin-left: 10;
+	font-size: 22;
+	padding: 2 10;
+}
+
+.journey-modes-container {
+	/*margin-top:50;*/
+	font-size: 22;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("https://i.imgur.com/q5phwcr.gif");
+	background-size: 70% 70%;
+}
+
+.journey-modes-selected {
+	color: #bb2222;
+}
+
+.border-width2-radius40-colorTransparent {
+	border-radius: 40;
+	border-width: 1;
+	border-color: transparent;
+}
+
+.border-width2-radius0-colorTransparent {
+	border-radius: 0;
+	border-width: 1;
+	border-left-color: black;
+}
+
+.border-width2-radius20-colorBBB {
+	border-radius: 20;
+	border-width: 1;
+	border-color: #bbb;
+}
+
+.border-width2-radius0-colorBBB {
+	border-radius: 0;
+	border-width: 1;
+	border-color: #bbb;
+}
+
+.search-container-discrete {
+	margin: 30;
+	padding: 20 0;
+	background-color: #eee;
+}
+
+.search-container-sticky {
+	margin: 0;
+	padding: 20 0 20 0;
+	background-color: #eee;
+}
+
+.transparency0 {
+	opacity: 1;
+}
+.transparency1 {
+	opacity: 0.9;
+}
+.transparency2 {
+	opacity: 0.8;
+}
+.transparency3 {
+	opacity: 0.7;
+}
+.transparency4 {
+	opacity: 0.6;
+}
+.transparency5 {
+	opacity: 0.5;
+}
+.transparency6 {
+	opacity: 0.4;
+}
+.transparency7 {
+	opacity: 0.3;
+}
+.transparency8 {
+	opacity: 0.2;
+}
+.transparency9 {
+	opacity: 0.1;
+}
