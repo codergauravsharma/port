@@ -10,16 +10,16 @@ import { HomeComponent } from '@src/app/home/home.component';
 // import { NativeScriptFormsModule, NativeScriptHttpClientModule } from '@nativescript/angular';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-  ],
-  imports: [
-    NativeScriptModule,
-    AppRoutingModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+	],
+	imports: [
+		NativeScriptModule,
+		AppRoutingModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
+	schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

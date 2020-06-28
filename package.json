@@ -16,7 +16,7 @@
 		"e2e": "ng e2e",
 		"clean": "npx rimraf hooks node_modules platforms package-lock.json && npm i",
 		"android": "tns debug android --env.aot --no-hmr",
-		"ios": "tns debug ios --env.aot --no-hmr",
+		"ios": "tns debug ios --env.aot --no-hmr --device 219F1816-5F0F-448D-BB96-BB7B03B480DD",
 		"mobile": "tns run",
 		"preview": "tns preview",
 		"ngcc": "ngcc --properties es2015 module main --first-only",
