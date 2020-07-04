@@ -1,11 +1,11 @@
 module.exports = {
 	packages: {
-		"@nativescript/angular": {
+		'@nativescript/angular': {
 			entryPoints: {
-				".": {
+				'.': {
 					override: {
-						main: "./index.js",
-						typings: "./index.d.ts",
+						main: './index.js',
+						typings: './index.d.ts',
 					},
 					ignoreMissingDependencies: true,
 				},

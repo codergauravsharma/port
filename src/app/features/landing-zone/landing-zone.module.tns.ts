@@ -1,5 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NativeScriptCommonModule } from '@nativescript/angular/common';
 import { LandingZoneRoutingModule } from '@src/app/features/landing-zone/landing-zone-routing.module';
 import {
 	componentDeclarations,
@@ -7,7 +7,7 @@ import {
 } from './landing-zone.common';
 
 @NgModule({
-	imports: [CommonModule, LandingZoneRoutingModule],
+	imports: [NativeScriptCommonModule, LandingZoneRoutingModule],
 	declarations: [componentDeclarations],
 	providers: [providerDeclarations],
 	schemas: [NO_ERRORS_SCHEMA],

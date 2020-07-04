@@ -1,12 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { Screen } from "../../../../models/ui-models/screen";
-import { EventData } from "@nativescript/core/data/observable";
+import { Component, OnInit } from '@angular/core';
+import { Screen } from '../../../../models/ui-models/screen';
+import { EventData } from '@nativescript/core/data/observable';
 
 @Component({
-	selector: "Home",
+	selector: 'port-home',
 	moduleId: module.id,
-	templateUrl: "./home.component.html",
-	styleUrls: ["./home.component.css"]
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
 	screen: Screen;
@@ -15,9 +15,7 @@ export class HomeComponent implements OnInit {
 		this.screen = new Screen();
 	}
 
-	public ngOnInit(): void {
-	}
+	public ngOnInit(): void {}
 
-	public onLayoutChanged(args: EventData): void {
-	}
+	public onLayoutChanged(args: EventData): void {}
 }

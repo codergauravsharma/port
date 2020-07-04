@@ -1,15 +1,9 @@
-import { NgModule } from "@angular/core";
-import { Routes } from "@angular/router";
-import { NativeScriptRouterModule } from "@nativescript/angular/router";
-
-import { HomeComponent } from "./components/home/home.component";
-
-const routes: Routes = [
-	{ path: "", component: HomeComponent }
-];
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { routes } from './landing-zone.common';
 
 @NgModule({
-	imports: [NativeScriptRouterModule.forChild(routes)],
-	exports: [NativeScriptRouterModule]
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
-export class LandingZoneRoutingModule { }
+export class LandingZoneRoutingModule {}

@@ -14,6 +14,7 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e",
+		"format": "npx prettier --write \"./**/*.{js,json,ts,css,scss,html}\" --use-tabs --single-quote",
 		"clean": "npx rimraf hooks node_modules platforms package-lock.json && npm i",
 		"android": "tns run android --env.aot",
 		"android-debug": "tns debug android --env.aot --no-hmr",
