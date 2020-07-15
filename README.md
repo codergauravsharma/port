@@ -2,8 +2,8 @@
 
 Option 1
 
-root component (<page-router-outlet>)
-hub component (<router-outlet>)
+root component (&lt;&lt;page-router-outlet&gt;&gt;)
+hub component (&lt;&lt;router-outlet&gt;&gt;)
 
 root-routing.forRoot
 
@@ -30,7 +30,7 @@ feature-routing.forChild
 
 Option 2
 
-root component (<page-router-outlet>) -> hub module -> hub component (<router-outlet>)
+root component (&lt;&lt;page-router-outlet&gt;&gt;) -> hub module -> hub component (&lt;&lt;router-outlet&gt;&gt;)
 
 root-routing.forRoot
 
@@ -43,7 +43,7 @@ root-routing.forRoot
             ),
     }
 
-<<hub>>-routing.forChild
+&lt;&lt;hub&gt;&gt;-routing.forChild
 
     {
         path: '',
