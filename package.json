@@ -1,7 +1,7 @@
 {
-	"name": "nsapp",
+	"name": "port",
 	"nativescript": {
-		"id": "org.nativescript.nsapp",
+		"id": "com.projectoverlanding.port",
 		"tns-ios": {
 			"version": "6.5.1"
 		}

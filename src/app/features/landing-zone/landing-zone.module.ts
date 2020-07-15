@@ -8,8 +8,8 @@ import {
 
 @NgModule({
 	imports: [CommonModule, LandingZoneRoutingModule],
-	declarations: [componentDeclarations],
-	providers: [providerDeclarations],
+	declarations: componentDeclarations,
+	providers: providerDeclarations,
 	schemas: [NO_ERRORS_SCHEMA],
 })
-export class LandingZoneModule {}
+export class LandingZoneModule { }

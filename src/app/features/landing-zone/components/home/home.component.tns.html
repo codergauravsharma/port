@@ -1,151 +1,45 @@
-<StackLayout
-	orientation="vertical"
-	iosOverflowSafeArea="true"
-	class="page-container page-container-portrait"
-	(layoutChanged)="onLayoutChanged($event)"
->
+<StackLayout orientation="vertical" iosOverflowSafeArea="true" class="page-container page-container-portrait"
+	(layoutChanged)="onLayoutChanged($event)">
 	<StackLayout class="page-container-overlay">
-		<GridLayout
-			#pageContentContainer
-			rows="auto,auto"
-			columns="auto,auto,*,auto"
-			class="page-content-container"
-		>
-			<image
-				row="0"
-				col="0"
-				src="https://i.imgur.com/8k820R8.png"
-				verticalAlignment="top"
-				horizontalAlignment="left"
-				class="current-location-offerings-icon"
-			>
+		<GridLayout #pageContentContainer rows="auto,auto" columns="auto,auto,*,auto" class="page-content-container">
+			<image row="0" col="0" src="https://i.imgur.com/8k820R8.png" verticalAlignment="top"
+				horizontalAlignment="left" class="current-location-offerings-icon">
 			</image>
-			<label
-				row="0"
-				col="1"
-				text="87"
-				verticalAlignment="top"
-				horizontalAlignment="left"
-				class="current-location-offerings-count playball"
-			>
+			<label row="0" col="1" text="87" verticalAlignment="top" horizontalAlignment="left"
+				class="current-location-offerings-count playball">
 			</label>
-			<label
-				row="0"
-				col="2"
-				text="Panchkula"
-				verticalAlignment="top"
-				horizontalAlignment="right"
-				class="playball current-location-placeholder border-width2-radius40-colorTransparent"
-			>
+			<label row="0" col="2" text="Panchkula" verticalAlignment="top" horizontalAlignment="right"
+				class="playball current-location-placeholder border-width2-radius40-colorTransparent">
 			</label>
-			<label
-				row="0"
-				col="3"
-				text="17&deg;C"
-				verticalAlignment="top"
-				horizontalAlignment="right"
-				class="playball current-location-weather border-width2-radius0-colorTransparent"
-			>
+			<label row="0" col="3" text="17&deg;C" verticalAlignment="top" horizontalAlignment="right"
+				class="playball current-location-weather border-width2-radius0-colorTransparent">
 			</label>
-			<GridLayout
-				#journeyModesContainer
-				row="1"
-				col="0"
-				colSpan="4"
-				rows="*,*,*,*,*"
-				columns="*,*,*,*,*"
-				class="playball journey-modes-container"
-				[width]="0.85 * screen.widthPixels + 'px'"
-				[height]="0.85 * screen.widthPixels + 'px'"
-			>
-				<label
-					row="0"
-					col="2"
-					colSpan="0"
-					text="nearby"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="center"
-					verticalAlignment="middle"
-				>
+			<GridLayout #journeyModesContainer row="1" col="0" colSpan="4" rows="*,*,*,*,*" columns="*,*,*,*,*"
+				class="playball journey-modes-container" [width]="0.85 * screen.widthPixels + 'px'"
+				[height]="0.85 * screen.widthPixels + 'px'">
+				<label row="0" col="2" colSpan="0" text="nearby" textWrap="true" textAlignment="center"
+					horizontalAlignment="center" verticalAlignment="middle">
 				</label>
-				<label
-					row="1"
-					col="3"
-					colSpan="2"
-					text="journeys"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="center"
-					verticalAlignment="top"
-				>
+				<label row="1" col="3" colSpan="2" text="journeys" textWrap="true" textAlignment="center"
+					horizontalAlignment="center" verticalAlignment="top">
 				</label>
-				<label
-					row="2"
-					col="4"
-					colSpan="0"
-					text="a to b"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="right"
-					verticalAlignment="middle"
-				>
+				<label row="2" col="4" colSpan="0" text="a to b" textWrap="true" textAlignment="center"
+					horizontalAlignment="right" verticalAlignment="middle">
 				</label>
-				<label
-					row="3"
-					col="3"
-					colSpan="2"
-					text="time-bound"
-					textWrap="true"
-					textAlignment="right"
-					horizontalAlignment="center"
-					verticalAlignment="bottom"
-					class="journey-modes-selected"
-				>
+				<label row="3" col="3" colSpan="2" text="time-bound" textWrap="true" textAlignment="right"
+					horizontalAlignment="center" verticalAlignment="bottom" class="journey-modes-selected">
 				</label>
-				<label
-					row="4"
-					col="2"
-					colSpan="0"
-					text="explore enroute"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="center"
-					verticalAlignment="middle"
-				>
+				<label row="4" col="2" colSpan="0" text="explore enroute" textWrap="true" textAlignment="center"
+					horizontalAlignment="center" verticalAlignment="middle">
 				</label>
-				<label
-					row="3"
-					col="0"
-					colSpan="2"
-					text="foodrage"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="center"
-					verticalAlignment="bottom"
-				>
+				<label row="3" col="0" colSpan="2" text="foodrage" textWrap="true" textAlignment="center"
+					horizontalAlignment="center" verticalAlignment="bottom">
 				</label>
-				<label
-					row="2"
-					col="0"
-					colSpan="0"
-					text="end of land"
-					textWrap="true"
-					textAlignment="left"
-					horizontalAlignment="left"
-					verticalAlignment="middle"
-				>
+				<label row="2" col="0" colSpan="0" text="end of land" textWrap="true" textAlignment="left"
+					horizontalAlignment="left" verticalAlignment="middle">
 				</label>
-				<label
-					row="1"
-					col="0"
-					colSpan="2"
-					text="game time"
-					textWrap="true"
-					textAlignment="center"
-					horizontalAlignment="center"
-					verticalAlignment="top"
-				>
+				<label row="1" col="0" colSpan="2" text="game time" textWrap="true" textAlignment="center"
+					horizontalAlignment="center" verticalAlignment="top">
 				</label>
 			</GridLayout>
 		</GridLayout>

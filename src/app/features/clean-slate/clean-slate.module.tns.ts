@@ -5,7 +5,7 @@ import { NativeScriptCommonModule } from '@nativescript/angular';
 
 @NgModule({
 	declarations: [],
-	imports: [CleanSlateRoutingModule, NativeScriptCommonModule],
+	imports: [NativeScriptCommonModule, CleanSlateRoutingModule],
 	schemas: [NO_ERRORS_SCHEMA],
 })
-export class CleanSlateModule {}
+export class CleanSlateModule { }

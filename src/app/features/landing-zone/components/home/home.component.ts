@@ -3,7 +3,7 @@ import { Screen } from '../../../../models/ui-models/screen';
 import { EventData } from '@nativescript/core/data/observable';
 
 @Component({
-	selector: 'port-home',
+	selector: 'app-home',
 	moduleId: module.id,
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.scss'],
@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 		this.screen = new Screen();
 	}
 
-	public ngOnInit(): void {}
+	public ngOnInit(): void { }
 
-	public onLayoutChanged(args: EventData): void {}
+	public onLayoutChanged(args: EventData): void { }
 }
