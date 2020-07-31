@@ -1,1 +1,29 @@
-<page-router-outlet></page-router-outlet>
+<BottomNavigation selectedIndex="0" orientation="vertical">
+	<TabStrip>
+		<TabStripItem>
+			<Label text="Plan"></Label>
+			<!-- <Image src="font://&#xf015;" class="far"></Image> -->
+			<Image src="~/assets/icons/home-01.svg"></Image>
+		</TabStripItem>
+
+		<TabStripItem>
+			<Label text=" Explore"></Label>
+			<!-- <Image src="font://&#xf007;" class="far"></Image> -->
+		</TabStripItem>
+
+		<TabStripItem>
+			<Label text="Feeds"></Label>
+			<!-- <Image src="font://&#xf00e;" class="far"></Image> -->
+		</TabStripItem>
+	</TabStrip>
+
+	<TabContentItem>
+		<page-router-outlet name="home"></page-router-outlet>
+	</TabContentItem>
+	<TabContentItem>
+		<page-router-outlet name="explore"></page-router-outlet>
+	</TabContentItem>
+	<TabContentItem>
+		<page-router-outlet name="plan"></page-router-outlet>
+	</TabContentItem>
+</BottomNavigation>
